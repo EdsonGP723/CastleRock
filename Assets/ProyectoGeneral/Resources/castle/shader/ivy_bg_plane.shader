@@ -22,7 +22,6 @@ Shader "TripleBrick/IvyBgPlane" {
             
             CGPROGRAM
             #pragma vertex vert
-            #pragma fragment frag
             #define UNITY_PASS_DEFERRED
             #include "UnityCG.cginc"
             #include "UnityPBSLighting.cginc"
@@ -98,7 +97,6 @@ Shader "TripleBrick/IvyBgPlane" {
             
             CGPROGRAM
             #pragma vertex vert
-            #pragma fragment frag
             #define UNITY_PASS_FORWARDBASE
             #include "UnityCG.cginc"
             #include "UnityPBSLighting.cginc"
