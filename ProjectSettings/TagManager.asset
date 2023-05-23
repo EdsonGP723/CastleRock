@@ -4,8 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Grid
-  - PlacementGrid
+  - Enemy
+  - Target
   layers:
   - Default
   - TransparentFX
