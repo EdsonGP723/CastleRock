@@ -1,24 +1,24 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class AIEnemy : MonoBehaviour
 {
-    [SerializeField] Transform target;
+	
+	[SerializeField] Transform target;
+	[SerializeField] float Speed;
+	[SerializeField] NavMeshAgent AI;
     private void Awake()
     {
-        
+	    var goal = GameObject.FindGameObjectWithTag("Target");
+	    target = goal.transform;
     }
-    // Start is called before the first frame update
-    void Start()
-    {
-       var goal = GameObject.FindGameObjectWithTag("Target");
-        target = goal.transform;
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
-        transform.position += target.position * 2f * Time.deltaTime;
+	    AI.speed = Speed;
+	    AI.SetDestination(target.position);
     }
 }
