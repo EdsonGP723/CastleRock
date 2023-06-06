@@ -19,6 +19,7 @@ public class InputManager : MonoBehaviour
     private void Update()
     {
         if(Input.GetMouseButtonDown(0))
+        Debug.Log("Aqui es donde lo seleccionas");
         OnClicked?.Invoke();
 
         if(Input.GetKeyDown(KeyCode.Escape))

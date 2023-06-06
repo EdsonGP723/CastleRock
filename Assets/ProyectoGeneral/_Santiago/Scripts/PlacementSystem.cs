@@ -46,6 +46,7 @@ public class PlacementSystem : MonoBehaviour
         gridVisualization.SetActive(true);
         cellIndicator.SetActive(true);
         inputManager.OnClicked += PlaceStructure;
+        Debug.Log("O aqui no estoy seguro");
         inputManager.OnExit += StopPlacement;
     }
 
