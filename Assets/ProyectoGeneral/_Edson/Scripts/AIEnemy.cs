@@ -23,7 +23,7 @@ public class AIEnemy : MonoBehaviour
 	    
 	    if(life <= 0){
 	    	this.gameObject.SetActive(false);
-	    	GameGlobals.Coins += 15;
+	    	GameGlobals.Coins += 30;
 	    }
     }
     
@@ -31,23 +31,23 @@ public class AIEnemy : MonoBehaviour
 	public void OnTriggerEnter(Collider other)
 	{
 		if (other.CompareTag("Ball1")){
-			life -= 3;
+			life -= 7;
 			other.gameObject.SetActive(false);
 		}
 		if (other.CompareTag("Ball2")){
-			life -= 6;
+			life -= 10;
 			other.gameObject.SetActive(false);
 		}
 		if (other.CompareTag("Ball3")){
-			life -= 8;
-			other.gameObject.SetActive(false);
-		}
-		if (other.CompareTag("Ball4")){
 			life -= 12;
 			other.gameObject.SetActive(false);
 		}
-		if (other.CompareTag("Ball5")){
+		if (other.CompareTag("Ball4")){
 			life -= 15;
+			other.gameObject.SetActive(false);
+		}
+		if (other.CompareTag("Ball5")){
+			life -= 20;
 			other.gameObject.SetActive(false);
 		}
 	}

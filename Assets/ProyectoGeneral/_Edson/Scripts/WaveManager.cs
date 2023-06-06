@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -37,7 +37,7 @@ public class WaveManager : MonoBehaviour
 		}
 		if (wave == 5)
 		{
-			enemyCount = 2;
+			enemyCount = 5;
 		}
 		if (enemyFinder == 0 && wave == maxWave)
 		{
@@ -58,11 +58,11 @@ public class WaveManager : MonoBehaviour
 			}
 			else if (wave < 4 && wave > 1)
 			{
-				_enemyType = Random.Range(0, 3);
+				_enemyType = 0;
 			}
 			else if (wave == 5)
 			{
-				_enemyType = 5;
+				_enemyType = 0;
 			}
 
 
