@@ -132,6 +132,7 @@ MonoBehaviour:
   target: {fileID: 0}
   Speed: 3
   AI: {fileID: -1252759775136292895}
+  life: 50
 --- !u!195 &-1252759775136292895
 NavMeshAgent:
   m_ObjectHideFlags: 0

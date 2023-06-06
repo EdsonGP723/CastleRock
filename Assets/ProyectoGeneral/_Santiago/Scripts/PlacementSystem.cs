@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +16,9 @@ public class PlacementSystem : MonoBehaviour
     private int selectedObjectIndex = -1;
 
     [SerializeField]
-    private GameObject gridVisualization;
+	private GameObject gridVisualization;
+    
+	private bool canBuy;
 
     //[SerializeField]
     //private AudioSource Confirmation, Negation;
@@ -27,7 +29,8 @@ public class PlacementSystem : MonoBehaviour
     private List<GameObject> placedGameObjects = new();
 
     void Start()
-    {
+	{
+		//GameGlobals.Coins = 200;
         StopPlacement();
         floorData = new GridData();
         furnitureData = new();
@@ -92,7 +95,14 @@ public class PlacementSystem : MonoBehaviour
     }
 
     private void Update()
-    {
+	{
+		/*if (GameGlobals.Coins != 0){
+			canBuy = true;
+		}
+		else {
+			canBuy = false;
+		}*/
+    	
         if(selectedObjectIndex < 0)
             return;
         Vector3 mousePosition = inputManager.GetSelectedMapPosition();
