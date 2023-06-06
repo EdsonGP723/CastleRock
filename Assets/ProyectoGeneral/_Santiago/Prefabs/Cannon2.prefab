@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3133129c7bec0c04690479eec9dd59a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartCorrutina: 3
+  StartCorrutina: 2
   BulletPrefab: {fileID: 1538383993949761917}
   StartPoint: {fileID: 8634868209456794290}
 --- !u!1 &7390425833976705659
@@ -583,7 +583,7 @@ PrefabInstance:
     - target: {fileID: 455148551025666582, guid: 56fd5142c4049e44e80a425288d1e618,
         type: 3}
       propertyPath: speed
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 455148551025666582, guid: 56fd5142c4049e44e80a425288d1e618,
         type: 3}

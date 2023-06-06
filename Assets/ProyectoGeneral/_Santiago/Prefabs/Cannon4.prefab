@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3133129c7bec0c04690479eec9dd59a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartCorrutina: 5
+  StartCorrutina: 4
   BulletPrefab: {fileID: 8254198746601785097}
   StartPoint: {fileID: 3553651079390860883}
 --- !u!1 &9032341788908881611

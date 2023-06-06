@@ -6,13 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class CastleManager : MonoBehaviour
 {
-	private float life = 10; 
+	private float life = 15; 
 	public GameObject gameOverCanva, cañonesCanva;
    
 	void OnTriggerEnter(Collider other)
 	{
 		if(other.CompareTag("Enemy")){
-			life-= 3;
+			life-= 2;
 			other.gameObject.SetActive(false);
 		}
 	}
@@ -20,7 +20,7 @@ public class CastleManager : MonoBehaviour
 	// Update is called every frame, if the MonoBehaviour is enabled.
 	protected void Update()
 	{
-		Debug.Log(life);
+		Debug.Log("Vida castillo" + life);
 		if (life <= 0){
 			cañonesCanva.SetActive(false);
 			gameOverCanva.SetActive(true);
